@@ -1,0 +1,9 @@
+{:deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        org.clojure/core.async {:mvn/version "1.5.648"}
+        org.immutant/web {:mvn/version "2.1.10"}
+        compojure/compojure {:mvn/version "1.7.0"}
+        ring/ring-core {:mvn/version "1.9.5"}
+        environ/environ {:mvn/version "1.2.0"}
+        com.xtdb/xtdb-core {:mvn/version "1.21.0"}
+        com.xtdb/xtdb-rocksdb {:mvn/version "1.21.0"}
+        core/core {:local/root "../core" :deps/manifest :deps}}}

@@ -1,0 +1,8 @@
+{:paths ["src/dev"
+         "src/main"
+         "src/test"]
+ :deps {thheller/shadow-cljs {:mvn/version "2.19.3"}
+        reagent/reagent {:mvn/version "1.1.1"}
+        haslett/haslett {:mvn/version "0.1.7"}
+        org.clojure/core.async {:mvn/version "1.5.648"}
+        core/core {:local/root "../core" :deps/manifest :deps}}}
