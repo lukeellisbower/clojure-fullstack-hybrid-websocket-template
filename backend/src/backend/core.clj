@@ -10,7 +10,7 @@
     [clojure.edn :as edn]
     [clojure.java.io :as io]
     [xtdb.api :as xt]
-    core)
+    [shared.core :as shared])
    (:gen-class))
 
 (defn start-xtdb! []
@@ -41,7 +41,7 @@
 (defn on-message [ch edn-data]
   (let [data (edn/read-string edn-data)]
     (async/send! ch (prn-str {:messge (apply str (reverse (:message data)))
-                              :data (core/route 99)}))))
+                              :data (shared/route 99)}))))
 
 (def websocket-callbacks
   "WebSocket callback functions"

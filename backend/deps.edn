@@ -6,4 +6,4 @@
         environ/environ {:mvn/version "1.2.0"}
         com.xtdb/xtdb-core {:mvn/version "1.21.0"}
         com.xtdb/xtdb-rocksdb {:mvn/version "1.21.0"}
-        core/core {:local/root "../core" :deps/manifest :deps}}}
+        shared/shared {:local/root "../shared" :deps/manifest :deps}}}

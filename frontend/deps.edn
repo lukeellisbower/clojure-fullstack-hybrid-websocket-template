@@ -5,4 +5,4 @@
         reagent/reagent {:mvn/version "1.1.1"}
         haslett/haslett {:mvn/version "0.1.7"}
         org.clojure/core.async {:mvn/version "1.5.648"}
-        core/core {:local/root "../core" :deps/manifest :deps}}}
+        shared/shared {:local/root "../shared" :deps/manifest :deps}}}

@@ -1,4 +1,4 @@
-(ns core
+(ns shared.core
   (:require [execute]
             [evaluate.evaluate :as e]))
 

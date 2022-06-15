@@ -5,7 +5,7 @@
             [haslett.client :as ws]
             [haslett.format :as fmt]
             [cljs.core.async :as a :refer [<! >! timeout]]
-            core))
+            [shared.core :as shared]))
 
 (declare init-socket)
 (def stream (atom nil))
@@ -34,7 +34,7 @@
 
 (defn root []
   [:div 
-   [:p "root: " (core/route 8)]
+   [:p "root: " (shared/route 8)]
    [:button {:on-click #(send {:message "hello world"})}
     "Send"]
    [:p (str @state)]])
